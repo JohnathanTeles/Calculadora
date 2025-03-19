@@ -1,66 +1,54 @@
-  <html>
-  	<head>
-  		<title>Calculadora</title>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col d-flex justify-content-center">
+        <br />
+        <div class="calculadora">
+          <input id="resultado" type="text" class="resultado" placeholder="0" disabled="disabled" />
+          
+          <div class="row">
+            <button onclick="resultado('acao', 'c')" type="button" class="clear">C</button>
+            <button onclick="resultado('acao', '/')" type="button" class="operacao">/</button>
+            <button onclick="resultado('acao', '*')" type="button" class="operacao">x</button>
+          </div>
 
-  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-      <link rel="stylesheet" type="text/css" href="estilo.css">
-      <script src="script.js"></script>
-  	</head>
+          <div class="row">
+            <button onclick="resultado('valor', '7')" type="button" class="numero">7</button>
+            <button onclick="resultado('valor', '8')" type="button" class="numero">8</button>
+            <button onclick="resultado('valor', '9')" type="button" class="numero">9</button>
+            <button onclick="resultado('valor', '-')" type="button" class="operacao">-</button>
+          </div>
+          
+          <div class="row">
+            <button onclick="resultado('valor', '4')" type="button" class="numero">4</button>
+            <button onclick="resultado('valor', '5')" type="button" class="numero">5</button>
+            <button onclick="resultado('valor', '6')" type="button" class="numero">6</button>
+            <button onclick="resultado('valor', '+')" type="button" class="operacao">+</button>
+          </div>
 
+          <div class="row">
+            <button onclick="resultado('valor', '1')" type="button" class="numero">1</button>
+            <button onclick="resultado('valor', '2')" type="button" class="numero">2</button>
+            <button onclick="resultado('valor', '3')" type="button" class="numero">3</button>
+            <button onclick="resultado('acao', '=')" type="button" class="enter">=</button>
+          </div>
 
-    <body style="background: #D9D9D9">
-
-      <div class="container">
-        <div class="row">
-          <div class="col d-flex justify-content-center">
-            <br />
-
-            <div class="calculadora">
-              <input  id="resultado" type="text" class="form-control resultado" placeholder="0" disabled="disabled" />
-              
-              <div class="row">
-                <button onclick="resultado('acao', 'c')" type="button" class="btn btn-dark btn-lg clear font-weight-light">C</button>
-                <button onclick="resultado('acao', '/')" type="button" class="btn btn-dark btn-lg font-weight-light">/</button>
-                <button onclick="resultado('acao', '*')" type="button" class="btn btn-dark btn-lg font-weight-light">x</button>
-              </div>
-
-              <div class="row">
-                <button onclick="resultado('valor', '7')" type="button" class="btn btn-dark btn-lg font-weight-light">7</button>
-                <button onclick="resultado('valor', '8')" type="button" class="btn btn-dark btn-lg font-weight-light">8</button>
-                <button onclick="resultado('valor', '9')" type="button" class="btn btn-dark btn-lg font-weight-light">9</button>
-                <button onclick="resultado('valor', '-')" type="button" class="btn btn-dark btn-lg font-weight-light">-</button>
-              </div>
-              
-              <div class="row">
-                <button onclick="resultado('valor', '4')" type="button" class="btn btn-dark btn-lg font-weight-light">4</button>
-                <button onclick="resultado('valor', '5')" type="button" class="btn btn-dark btn-lg font-weight-light">5</button>
-                <button onclick="resultado('valor', '6')" type="button" class="btn btn-dark btn-lg font-weight-light">6</button>
-                <button onclick="resultado('valor', '+')" type="button" class="btn btn-dark btn-lg font-weight-light">+</button>
-              </div>
-
-              <div class="row">
-                <button onclick="resultado('valor', '1')" type="button" class="btn btn-dark btn-lg font-weight-light">1</button>
-                <button onclick="resultado('valor', '2')" type="button" class="btn btn-dark btn-lg font-weight-light">2</button>
-                <button onclick="resultado('valor', '3')" type="button" class="btn btn-dark btn-lg font-weight-light">3</button>
-                <button onclick="resultado('acao', '=')" type="button" class="btn btn-dark btn-lg enter">=</button>
-              </div>
-
-              <div class="row" style="margin-top: -60px">
-                <button onclick="resultado('valor', '0')" type="button" class="btn btn-dark zero btn-lg font-weight-light">0</button>
-                <button onclick="resultado('valor', '.')" type="button" class="btn btn-dark btn-lg font-weight-light">.</button>
-              </div>
-
-            </div>
+          <div class="row">
+            <button onclick="resultado('valor', '0')" type="button" class="zero">0</button>
+            <button onclick="resultado('valor', '.')" type="button" class="numero">.</button>
           </div>
         </div>
-      </div>  
-
-
-
-
-
-
-
-    </body>	
-
-  </html>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
